@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Иметь_причину_неисправности -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Иметь_причину_неисправности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Иметь_решение_неисправности -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Иметь_решение_неисправности">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_подшипников"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_ротора"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_подшипников -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_подшипников">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_ротора -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_ротора">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Выяснить_причину__срабатывания_защиты -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Выяснить_причину__срабатывания_защиты">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_перегружен -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_перегружен">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_сильно_гудит_и_дымит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_сильно_гудит_и_дымит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Замыкание_витков_обмотки_статора"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#КЗ_одной_фазы"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Отправить_двигатель_в_ремонт"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Задевание_ротора_о_статор -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Задевание_ротора_о_статор">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заклинило_вал_рабочего_механизма -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заклинило_вал_рабочего_механизма">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заменить_подшипник -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заменить_подшипник">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Замыкание_витков_обмотки_статора -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Замыкание_витков_обмотки_статора">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#КЗ_одной_фазы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#КЗ_одной_фазы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_мало_напряжения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_мало_напряжения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_нет_напряжения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_нет_напряжения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_вентиляция_двигателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_вентиляция_двигателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_центровка_валов_двигателя_и_рабочей_машины -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_центровка_валов_двигателя_и_рабочей_машины">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Не_достигает_требуемой_частоты_вращения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Не_достигает_требуемой_частоты_вращения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_перегружен"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_вышел_из_строя"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заменить_подшипник"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_перегрузку"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Ослабление_крепления_в_подшипниковом_щите -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Ослабление_крепления_в_подшипниковом_щите">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очень_большая_вибрация_машины"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Превышение_радиальной_нагрузки_на_вал"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Остановка_рабочего_двигателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Остановка_рабочего_двигателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Прекращена_подача_напряжения"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Сработала_защита_двигателя"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Выяснить_причину__срабатывания_защиты"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_разрыв_в_питающей_цепи"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Отправить_двигатель_в_ремонт -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Отправить_двигатель_в_ремонт">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очень_большая_вибрация_машины -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очень_большая_вибрация_машины">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очистить_вентиляционные_каналы_подачи_воздуха -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очистить_вентиляционные_каналы_подачи_воздуха">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Перегрев_и_шумы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Перегрев_и_шумы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_центровка_валов_двигателя_и_рабочей_машины"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_и_смазка_загрязнены"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_изношен"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышена_температура_окружающей_среды -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышена_температура_окружающей_среды">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышено_или_понижено_напряжение_сети -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышено_или_понижено_напряжение_сети">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_вышел_из_строя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_вышел_из_строя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_и_смазка_загрязнены -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_и_смазка_загрязнены">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_изношен -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Подшипник_изношен">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Понизить_температуру_до_допустимого_значения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Понизить_температуру_до_допустимого_значения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Превышение_радиальной_нагрузки_на_вал -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Превышение_радиальной_нагрузки_на_вал">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_подшипников"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Прекращена_подача_напряжения -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Прекращена_подача_напряжения">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#При_включении_неподвижен -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#При_включении_неподвижен">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_мало_напряжения"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#На_входных_клеммах_нет_напряжения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#При_включении_неподвижен_и_гудит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#При_включении_неподвижен_и_гудит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Задевание_ротора_о_статор"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Заклинило_вал_рабочего_механизма"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Разрушен_подшипник"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Разрушен_подшипник -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Разрушен_подшипник">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_ротора"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Сильно_перегревается -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Сильно_перегревается">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Двигатель_перегружен"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Нарушена_вентиляция_двигателя"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышена_температура_окружающей_среды"/>
+        <Иметь_причину_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Повышено_или_понижено_напряжение_сети"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Очистить_вентиляционные_каналы_подачи_воздуха"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Понизить_температуру_до_допустимого_значения"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_перегрузку"/>
+        <Иметь_решение_неисправности rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_причину_отклонения_напряжения_от_номинального"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Сработала_защита_двигателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Сработала_защита_двигателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Причина_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_загрязнение_поверхности_двигателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_загрязнение_поверхности_двигателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_небаланс_двигателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_небаланс_двигателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_перегрузку -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_перегрузку">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_причину_отклонения_напряжения_от_номинального -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_причину_отклонения_напряжения_от_номинального">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_разрыв_в_питающей_цепи -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Устранить_разрыв_в_питающей_цепи">
+        <rdf:type rdf:resource="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Решение_проблемы_неисправности_двигателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_двигателя"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_подшипников"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/елизавета/ontologies/2020/3/untitled-ontology-15#Неисправность_ротора"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
